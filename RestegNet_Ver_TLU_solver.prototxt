@@ -1,0 +1,29 @@
+# The train/test net protocol buffer definition
+net: "RestegNet_Ver_TLU.prototxt"
+random_seed: 1234
+test_iter: 100
+test_interval: 500
+iter_size: 1
+
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.4
+momentum: 0.95        
+weight_decay: 0.0005
+type: "AdaDelta"
+
+# The learning rate policy
+lr_policy : "poly"
+power : 0.5
+
+# Display every 100 iterations
+display: 100
+
+# The maximum number of iterations
+max_iter: 500000 #80000
+
+# snapshot intermediate results
+snapshot: 5000
+snapshot_prefix: "/home/sklois-ke/RestegNet_Ver_TLU/snapshot/snapshot_no"
+
+# solver mode: CPU or GPU
+solver_mode: GPU
