@@ -10,7 +10,7 @@ layer {
     crop_size:256
   }
   data_param {
-    source: "/home/sklois-ke/lmdb_npa/train_lmdb_0.4"
+    source: "/home/sklois-ke/lmdb_spade/train_lmdb_0.4"
     batch_size: 16
     backend: LMDB
   }
@@ -27,7 +27,7 @@ layer {
     crop_size:256
   }
   data_param {
-    source: "/home/sklois-ke/lmdb_npa/val_lmdb_0.4" #1000
+    source: "/home/sklois-ke/lmdb_spade/val_lmdb_0.4" #1000
     batch_size: 16
     backend: LMDB
   }
